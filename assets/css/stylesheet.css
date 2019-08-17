@@ -297,6 +297,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10b6a8', end
     position: relative;
 	padding: 20px;
 	background: #fff;
+	box-shadow: 0px 1px 1px #ddd;
+	border-radius: 3px;
+	margin-bottom: 30px;
 }
 
 .bordered-box:before {
@@ -361,4 +364,86 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10b6a8', end
 
 .bordered-box.rights-panel ul li a:hover {
     color: #0A742C;
+}
+
+/* cta area */
+.cta-area {
+    position: relative;
+    background-color: #11A497;
+    margin: 50px 0;
+    padding: 43px 35px;
+    display: flex;
+	align-items: center;
+	z-index: 11;
+	background-image: url(../img/hero-bg.jpg)
+}
+.cta-area:after{
+	position:absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+	border-radius: 5px;
+	z-index: -1;
+	background: #10b6a8;
+	background: -moz-linear-gradient(left, #10b6a8 0%, #0a742c 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #10b6a8), color-stop(100%, #0a742c));
+	background: -webkit-linear-gradient(left, #10b6a8 0%, #0a742c 100%);
+	background: -o-linear-gradient(left, #10b6a8 0%, #0a742c 100%);
+	background: -ms-linear-gradient(left, #10b6a8 0%, #0a742c 100%);
+	background: linear-gradient(to right, #10b6a8 0%, #0a742c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10b6a8', endColorstr='#0a742c', GradientType=1 );
+	
+}
+
+.cta-area .cta-text {
+    flex: 3;
+    color: #fff;
+}
+
+.cta-area .cta-text h2 {
+    color: #fff;
+}
+
+a.cta-btn {
+    display: inline-block;
+    background-color: #10b6a8;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+/* news section */
+.single-news-block .news-bg {
+    background-color: #ddd;
+    height: 275px;
+    border-radius: 5px;
+}
+
+.single-news-block p {
+    margin-top: 10px;
+    color: #10b6a8;
+}
+
+.single-news-block h3 {
+    font-size: 17px;
+}
+
+.single-news-block {
+    margin-bottom: 34px;
+}
+
+.load-more-btn {
+	display: block;
+    background-color: #10b6a8;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 3px;
 }
